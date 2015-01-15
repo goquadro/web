@@ -5,8 +5,8 @@ import (
 	"log"
 	"net/http"
 
-	"git.qrawl.net/qdoc/core"
 	"github.com/go-martini/martini"
+	"github.com/goquadro/core"
 	"github.com/martini-contrib/render"
 )
 

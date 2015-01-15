@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"os"
 
-	"git.qrawl.net/qdoc/core"
 	"github.com/go-martini/martini"
+	"github.com/goquadro/core"
 	"github.com/martini-contrib/binding"
 	"github.com/martini-contrib/gorelic"
 	"github.com/martini-contrib/render"
@@ -27,8 +27,8 @@ type config struct {
 	resources          string
 	newRelicAppName    string
 	newRelicKey        string
-	jwtSignKey         []byte // openssl genrsa -out goquadro_jwt.rsa 2048
-	jwtVerifyKey       []byte // openssl rsa -in goquadro_jwt.rsa -pubout > goquadro_jwt.rsa.pub
+	jwtSignKey         string // openssl genrsa -out goquadro_jwt.rsa 2048
+	jwtVerifyKey       string // openssl rsa -in goquadro_jwt.rsa -pubout > goquadro_jwt.rsa.pub
 	googleOauth2Id     string
 	googleOauth2Secret string
 }

@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"git.qrawl.net/qdoc/core"
+	"github.com/goquadro/core"
 	jwt "github.com/dgrijalva/jwt-go"
 	"github.com/martini-contrib/render"
 )
